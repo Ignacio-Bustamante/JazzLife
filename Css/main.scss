@@ -1,0 +1,390 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+	padding: 0;
+}
+
+@import "./parciales/media-query";
+
+.header {
+    background-color: #353b3c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem;
+    @include movil{
+        background-color: turquoise;
+    }
+    
+    
+    &__logo {
+        color: #ffffff ;
+        font-family: 'Limelight', cursive;
+        font-size: 4rem;
+        font-weight: 100;
+       
+        &_a {
+            color: inherit;
+            text-decoration: none;
+            color: #ffffff ;
+            font-family: 'Limelight', cursive;
+            font-size: 4rem;
+            font-weight: 100;
+        }
+
+        &_a:hover {
+            color: #ffffff;
+        }
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        &__item {
+   
+            margin-left: 1rem;
+        }
+    }
+
+    &__link{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 400;
+        transition-property: font-size;
+        transition-property: color;
+        transition-duration: .45s;
+    }
+    &__link:hover {
+        color: #ff0000;
+        font-size: 1.65rem;
+       
+    }
+
+}
+
+.hero {
+    height: 90vh;
+    background-image: url(../assets/saxByN.jpg);
+    display: flex;
+    background-size: cover;
+    background-position: 0px 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    &__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 2rem;
+    }
+
+    &__button {
+        background-color: #ff0000;
+        color: #ffffff;
+        padding: 1rem;
+        border: none;
+        border-radius: 100px 100px 100px 100px;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    &__text {
+        background-color: #ffffff;
+        font-size: 1.5rem;
+    }
+    
+    
+
+}
+
+.logIn{
+    background-color: #ffffff;
+    width: auto;
+
+    &__form{
+        background-color: #353b3c;
+
+    }
+    &__btn{
+        background-color: #ff0000;
+        border-radius:  100px 100px 100px 100px;
+    }
+  
+}
+
+.shows, .logIn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.shows__title, .titleIndex, .titleEquipo, .titleIralcurso, .contactanos__title {
+    font-family: 'Limelight', cursive;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;    
+}
+
+
+
+
+
+.shows{
+    height: 100vh;
+    background-image: url(../assets/subte.jpg);
+    display: flex;
+    background-size: cover;
+    background-position: center; 
+    
+    &__title{
+        background-color: #ffffff;
+    }
+
+    &__calendar{
+        background-color: #ffffff;
+    }
+
+    &__month {
+        text-align: center;
+        font-weight:900;
+    }
+
+    &__table{
+        background-color: #ffffff;
+    }
+
+    &__day{
+        color: greenyellow
+
+    }
+
+    &__text{
+        color:tomato
+
+    }
+
+    &__form{
+        background-color: aquamarine;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+.subMenu{
+	position: absolute;
+	background-color: #000000;
+	list-style: none;
+	display: none; 
+    padding: 1.8rem;
+
+    &__link{
+        display: block;
+        padding-bottom: 15px;
+        margin-left: 0pt;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.3rem;
+        transition-property: font-size;
+        transition-property: color;
+        transition-duration: .45s;
+    }
+    &__link:hover{
+        color: #ff0000;
+        font-size: 1.33rem;
+        
+    }
+}
+
+.header__list li:hover .subMenu{
+	display: block;
+    padding-left: 0pt;
+    margin-left: 0pt;
+
+}
+
+.dot {
+    display: flex;
+    display: inline-flex;
+    border: 6px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 1px;
+    height: 1px;
+    transition-property: background;
+    transition-property: border;
+    transition-duration: 0.5s;
+   
+}
+
+.header__logo:hover .dot{
+    
+    border: 6px solid #ff0000;
+    background-color: #ff0000;
+
+  
+}
+
+
+
+.titleIndex {
+    color: #000000 ;
+    font-family: 'Limelight', cursive;
+    font-size: 2rem;
+    font-weight: 100;
+    background: #ffffff;
+    
+}
+
+
+
+.containerEquipo {
+    height: 90vh;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+    &__cell1:hover {
+        background: #000000;
+        
+      }
+      &__cell2:hover {
+        background: #000000;
+        
+    
+      }
+      &__cell3:hover {
+        background: #000000;
+        
+      }
+      &__cell4:hover {
+        background: #000000;
+        
+      }
+      &__cell5:hover {
+        background: #000000;
+        
+      }
+      &__cell6:hover {
+        background: #000000;
+        
+      }
+      &__cell1:hover .cell__Text{
+        color: #ffffff;
+    }
+    &__cell2:hover .cell__Text{
+        color: #ffffff;
+    }
+    &__cell3:hover .cell__Text{
+        color: #ffffff;
+    }
+    &__cell4:hover .cell__Text{
+        color: #ffffff;
+    }
+    &__cell5:hover .cell__Text{
+        color: #ffffff;
+    }
+    &__cell6:hover .cell__Text{
+        color: #ffffff;
+    }
+  }
+  
+.cell1__Text, .cell2__Text, .cell3__Text, .cell4__Text, .cell5__Text, .cell6__Text{
+      
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .contactanos{
+      height: 180vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 3%, rgba(28,30,32,1) 100%);
+
+
+    &__form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+}
+
+
+
+
+}
+
+
+
+
+
+  .irAlCurso{
+    height: 100vh;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 3%, rgba(28,30,32,1) 100%);
+}
+
+.slide{
+    margin: 2rem;
+}
+
+.slide img{
+    height: 76vh;
+}
+
+
+ 
+
+
+
+
+
+
+  /*footer*/
+
+.footer{
+    position: static;
+    bottom: 0px;
+    width: 100%;
+    background: #000000;
+   padding: 1.2rem;
+   
+   &__mainContent{
+    display: flex;
+    justify-content: space-evenly;
+}
+    
+    &__leftBox, &__centerBox, &__rightBox {
+        color: #ffffff;
+    }
+
+    &__leftBox:hover, &__centerBox:hover, &__rightBox:hover{
+        color: #ff0000;
+    }
+}
+
+
+
+ 
+ 
+
+
+
+ /*footer*/
+ 
+
+
+
+
+
+
+
+
+
+
+
