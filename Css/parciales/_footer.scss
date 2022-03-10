@@ -1,0 +1,29 @@
+
+ 
+
+  .footer{
+    position: static;
+    bottom: 0px;
+    width: 100%;
+    height: 35px;
+    background: #353b3c;
+   
+   
+   &__mainContent{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 11px;
+    }
+    
+    &__leftBox, &__centerBox, &__rightBox {
+        color: #ffffff;
+    }
+
+    &__leftBox:hover, &__centerBox:hover, &__rightBox:hover{
+        color: #ff0000;
+    }
+
+    .footerText{
+        margin-bottom: 0%;
+    }
+}

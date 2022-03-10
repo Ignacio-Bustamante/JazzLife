@@ -1,0 +1,128 @@
+
+
+
+ .header {
+    background-color: #353b3c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: static;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    flex-wrap: wrap;
+//   
+
+    
+    &__item {
+        margin: 10px;
+    } 
+    
+    &__logo {
+        color: #ffffff ;
+        font-family: 'Limelight', cursive;
+        font-size: 4rem;
+        font-weight: 100;
+        padding: 1rem;
+        flex-wrap: nowrap;
+        margin: 0%;
+
+       
+        &_a {
+            color: inherit;
+            text-decoration: none;
+            color: #ffffff ;
+            font-family: 'Limelight', cursive;
+            font-size: 4rem;
+            font-weight: 100;
+        }
+
+        &_a:hover {
+            color: #ffffff;
+        }
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        padding: 0px;
+    }
+
+    &__link{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 400;
+        transition-property: font-size;
+        transition-property: color;
+        transition-duration: .45s;
+    }
+    &__link:hover {
+        color: #ff0000;
+        font-size: 1.65rem;
+       
+    }
+
+}
+
+.header__logo:hover .dot{
+    
+    border: 6px solid #ff0000;
+    background-color: #ff0000;
+
+  
+}
+
+.dot {
+    display: flex;
+    display: inline-flex;
+    border: 6px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 1px;
+    height: 1px;
+    transition-property: background;
+    transition-property: border;
+    transition-duration: 0.5s;
+   
+}
+
+.subMenu{
+	position: absolute;
+	background-color: #353b3c;
+	list-style: none;
+	display: none; 
+    padding: 1.8rem;
+
+    &__link{
+        display: block;
+        padding-bottom: 15px;
+        margin-left: 0pt;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.3rem;
+        transition-property: font-size;
+        transition-property: color;
+        transition-duration: .45s;
+    }
+    &__link:hover{
+        color: #ff0000;
+        font-size: 1.33rem;
+        
+    }
+}
+
+.header__list li:hover .subMenu{
+	display: block;
+    padding-left: 0pt;
+    margin-left: 0pt;
+}
+
+.menu-icon{
+    display: none;
+    color: #ff0000;
+}
+
+
+ @import './media-query'

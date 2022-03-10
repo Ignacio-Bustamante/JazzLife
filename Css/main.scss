@@ -5,69 +5,20 @@
 }
 
 @import "./parciales/media-query";
+@import './parciales/footer';
+@import './parciales/header.scss';
 
-.header {
-    background-color: #353b3c;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.8rem;
-    @include movil{
-        background-color: turquoise;
-    }
-    
-    
-    &__logo {
-        color: #ffffff ;
-        font-family: 'Limelight', cursive;
-        font-size: 4rem;
-        font-weight: 100;
-       
-        &_a {
-            color: inherit;
-            text-decoration: none;
-            color: #ffffff ;
-            font-family: 'Limelight', cursive;
-            font-size: 4rem;
-            font-weight: 100;
-        }
 
-        &_a:hover {
-            color: #ffffff;
-        }
-    }
-    &__list{
-        list-style: none;
-        display: flex;
-        &__item {
    
-            margin-left: 1rem;
-        }
-    }
 
-    &__link{
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 1.6rem;
-        font-weight: 400;
-        transition-property: font-size;
-        transition-property: color;
-        transition-duration: .45s;
-    }
-    &__link:hover {
-        color: #ff0000;
-        font-size: 1.65rem;
-       
-    }
 
-}
 
 .hero {
     height: 90vh;
     background-image: url(../assets/saxByN.jpg);
     display: flex;
     background-size: cover;
-    background-position: 0px 1500px;
+    background-position: 0% 51%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -98,11 +49,12 @@
 }
 
 .logIn{
-    background-color: #ffffff;
+   
     width: auto;
 
     &__form{
         background-color: #353b3c;
+    
 
     }
     &__btn{
@@ -116,19 +68,24 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
-.shows__title, .titleIndex, .titleEquipo, .titleIralcurso, .contactanos__title {
+.shows__title, .titleEquipo, .titleIralcurso, .contactanos__title {
+    font-family: 'Limelight', cursive;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    padding-top: 5rem;
+    text-align: center;    
+}
+
+.titleIndex{
+    background-color: #ffffff;
     font-family: 'Limelight', cursive;
     font-size: 2rem;
     padding: 1rem 2rem;
     text-align: center;    
 }
-
-
-
-
-
 .shows{
     height: 100vh;
     background-image: url(../assets/subte.jpg);
@@ -136,9 +93,7 @@
     background-size: cover;
     background-position: center; 
     
-    &__title{
-        background-color: #ffffff;
-    }
+    
 
     &__calendar{
         background-color: #ffffff;
@@ -154,92 +109,22 @@
     }
 
     &__day{
-        color: greenyellow
+        color: #000000
 
     }
 
     &__text{
-        color:tomato
+        color: #ff0000
 
     }
 
     &__form{
-        background-color: aquamarine;
+        background-color: #353b3c;
         text-align: center;
     }
 
 
 }
-
-
-
-
-
-.subMenu{
-	position: absolute;
-	background-color: #000000;
-	list-style: none;
-	display: none; 
-    padding: 1.8rem;
-
-    &__link{
-        display: block;
-        padding-bottom: 15px;
-        margin-left: 0pt;
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 1.3rem;
-        transition-property: font-size;
-        transition-property: color;
-        transition-duration: .45s;
-    }
-    &__link:hover{
-        color: #ff0000;
-        font-size: 1.33rem;
-        
-    }
-}
-
-.header__list li:hover .subMenu{
-	display: block;
-    padding-left: 0pt;
-    margin-left: 0pt;
-
-}
-
-.dot {
-    display: flex;
-    display: inline-flex;
-    border: 6px solid #ffffff;
-    background-color: #ffffff;
-    border-radius: 50%;
-    width: 1px;
-    height: 1px;
-    transition-property: background;
-    transition-property: border;
-    transition-duration: 0.5s;
-   
-}
-
-.header__logo:hover .dot{
-    
-    border: 6px solid #ff0000;
-    background-color: #ff0000;
-
-  
-}
-
-
-
-.titleIndex {
-    color: #000000 ;
-    font-family: 'Limelight', cursive;
-    font-size: 2rem;
-    font-weight: 100;
-    background: #ffffff;
-    
-}
-
 
 
 .containerEquipo {
@@ -313,70 +198,17 @@
         flex-direction: column;
         
 }
-
-
-
-
 }
-
-
-
-
 
   .irAlCurso{
     height: 100vh;
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,0) 3%, rgba(28,30,32,1) 100%);
-}
-
-.slide{
-    margin: 2rem;
-}
-
-.slide img{
-    height: 76vh;
-}
-
-
- 
-
-
-
-
-
-
-  /*footer*/
-
-.footer{
-    position: static;
-    bottom: 0px;
-    width: 100%;
-    background: #000000;
-   padding: 1.2rem;
-   
-   &__mainContent{
-    display: flex;
-    justify-content: space-evenly;
-}
-    
-    &__leftBox, &__centerBox, &__rightBox {
-        color: #ffffff;
-    }
-
-    &__leftBox:hover, &__centerBox:hover, &__rightBox:hover{
-        color: #ff0000;
-    }
+    background-image: url(../assets/blur1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
 
 
- 
- 
-
-
-
- /*footer*/
- 
 
 
 
